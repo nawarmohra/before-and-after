@@ -1,0 +1,29 @@
+<div class="juxtapose">
+    <img src="https://example.com/firstimage.jpg" />
+    <img src="https://example.com/secondimage.jpg" />
+</div>
+<script src="https://cdn.knightlab.com/libs/juxtapose/latest/js/juxtapose.min.js"></script>
+<link rel="stylesheet" href="https://cdn.knightlab.com/libs/juxtapose/latest/css/juxtapose.css">
+<div id="foo"></div>
+<script>
+slider = new juxtapose.JXSlider('#foo',
+    [
+        {
+            src: 'https://iranwirearabic.com/wp-content/uploads/2021/08/1-2021.jpg',
+            label: '2009',
+            credit: 'Image Credit'
+        },
+        {
+            src: 'https://iranwirearabic.com/wp-content/uploads/2021/08/1-2020.jpg',
+            label: '2014',
+            credit: "Image Credit"
+        }
+    ],
+    {
+        animate: true,
+        showLabels: true,
+        showCredits: true,
+        startingPosition: "50%",
+        makeResponsive: true
+    });
+</script>
